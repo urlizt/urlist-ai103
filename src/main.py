@@ -1,12 +1,13 @@
 from dotenv import load_dotenv
 import os
 
-# Load variables from the .env file in the project root
+from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
+
+# Load .env
 load_dotenv()
 
-project_endpoint = os.getenv("PROJECT_ENDPOINT")
-model_name = os.getenv("MODEL_DEPLOYMENT_NAME")
-
-print(project_endpoint)
-print(model_name)
-
+project_client = AIProjectClient(
+    credential=DefaultAzureCredential(),
+    endpoint=os.environ["PROJECT_ENDPOINT"]
+)

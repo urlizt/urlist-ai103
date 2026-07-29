@@ -5,33 +5,33 @@ flowchart TD
     D --> E[Endpoint]
     E --> F[Model & Response]
 
-    subgraph Application
+    subgraph AppGroup[Application]
         A1[Web]
         A2[Mobile]
         A3[Scripts]
     end
-    A --> Application
+    A --> AppGroup
 
-    subgraph Select SDK
+    subgraph SDKGroup[Select SDK]
         B1[Foundry SDK]
         B2[OpenAI SDK]
     end
-    B --> Select SDK
+    B --> SDKGroup
 
-    subgraph Authentication
+    subgraph AuthGroup[Authentication]
         C1[Entra ID]
         C2[API Key / Token]
     end
-    C --> Authentication
+    C --> AuthGroup
 
-    subgraph Chat API
+    subgraph ChatGroup[Chat API]
         D1[Responses API]
         D2[ChatCompletions API]
     end
-    D --> Chat API
+    D --> ChatGroup
 
-    subgraph Endpoint
+    subgraph EndpointGroup[Endpoint]
         E1[Project Endpoint - Agents & Data]
         E2[Azure OpenAI Endpoint - Model Inference]
     end
-    E --> Endpoint
+    E --> EndpointGroup
