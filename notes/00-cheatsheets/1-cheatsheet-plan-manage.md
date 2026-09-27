@@ -89,6 +89,16 @@ Most real solutions use both: Foundry SDK for platform operations, OpenAI-compat
 
 Evaluate before release, after meaningful changes, and continuously in production with traces/telemetry.
 
+## Foundry Tools
+1. **Azure Language**- Text analysis: entity extraction, sentiment analysis, summarization
+   - Supports conversational language models and Q&A solutions
+2. **Azure Speech** - Text‑to‑speech and speech‑to‑text
+    - Real‑time speech for conversational apps and agents
+3. **Azure Translator** - High‑quality translation across many languages
+4. **Azure Document Intelligence** - Extract fields from documents (invoices, receipts, forms) using prebuilt or custom models
+5. **Azure Content Understanding**
+
+
 ## High-value traps
 
 - “Global” does **not** mean a fixed region. Processing can occur in any Azure region.
