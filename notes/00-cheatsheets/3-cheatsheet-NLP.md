@@ -1,5 +1,7 @@
 # Foundry Tools
 
+<img src="../images/02-overview.png" width=800>
+
 ### Top Exam Traps (High-Yield)
 
 1. **Speech translation vs. text translation** — Speech handles audio I/O; Translator handles text only.
@@ -57,3 +59,5 @@
 | **Metrics Advisor** | Retired | No direct replacement in Foundry Tools |
 | **Personalizer** | Retired | No new apps |
 | **QnA Maker** | Retired | Use **Custom Question Answering** in Azure Language |
+
+<img src="../images/02-rag-conveyor-belt.png" width=900>

@@ -1,5 +1,7 @@
 # AI-103 — Plan & Manage: Foundry Foundations
 
+<img src="../images/ai-103-mindmap.png" width=900>
+
 ## The exam mindset
 
 Choose the service, model, deployment, endpoint, and authentication method that best fits the scenario’s:
@@ -106,3 +108,19 @@ Evaluate before release, after meaningful changes, and continuously in productio
 - RAG needs an **embedding/retrieval** solution; it is not a fine-tuning substitute.
 - Foundry-specific capabilities such as agents, evaluations, and platform tools point toward the **Foundry SDK/project endpoint**.
 - An LLM may request a function call; **your application** validates and executes it.
+
+## Quick Exam Memory Block
+
+```text
+Plan first.
+Choose the smallest suitable model.
+Use dedicated Azure AI services for specific tasks.
+Use RAG when the answer must come from private or current data.
+Use Azure AI Search for indexing and retrieval.
+Use hybrid search when both keyword precision and semantic meaning matter.
+Use managed identity and RBAC for production access.
+Use Content Safety for unsafe content, prompt attacks, and groundedness checks.
+Limit agent tools.
+Add human approval for sensitive actions.
+Monitor cost, latency, retrieval quality, safety, and grounding.
+```
